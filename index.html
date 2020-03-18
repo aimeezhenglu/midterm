@@ -73,7 +73,7 @@
     <a-light type="point" intensity="0.5"></a-light>
      
     <a-camera>
-        <a-cursor event-set__leave="_event: mouseleave; visible: false"></a-cursor>
+        <a-cursor event-set__enter="_event: mouseenter; _target: #yellow; visible: false" event-set__leave="_event: mouseleave; visible: false" ></a-cursor>
     </a-camera>
  </a-scene>
 </body>
