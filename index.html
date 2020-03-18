@@ -15,6 +15,7 @@
 <body>
   <a-scene>
     <a-assets>
+      <img id="galaxy" src="assets/img/star.jpg">
       <img id="gndTexture" src="assets/img/grid.jpg">
       <a-asset-item id="si-obj" src="assets/models/si/character1.obj"></a-asset-item>
       <a-asset-item id="si-mtl" src="assets/models/si/character1.mtl"></a-asset-item>
@@ -55,10 +56,7 @@
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity laser-controls="hand: left "></a-entity>
-    <a-entity laser-controls="hand: right "></a-entity>
-
-    <a-sky id="bg " color="#fff "></a-sky>
+    <a-sky id="galaxy"></a-sky>
 
     <a-plane src="#gndTexture " rotation="-90 0 0 " width="50 " height="50 "></a-plane>
     
