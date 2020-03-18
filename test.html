@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>test</title>
+    <title>Basic Interactions - A-Frame</title>
     <meta name="description" content="Interactions - A-Frame">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
@@ -15,10 +15,15 @@
             <img id="gndTexture" src="assets/img/grid.jpg">
         </a-assets>
 
-        <a-camera>
-            <a-cursor></a-cursor>
-        </a-camera>
+        <a-entity camera look-controls wasd-controls>
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                      position="0 0 -1"
+                      geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                      material="color: black; shader: flat">
+            </a-entity>
+          </a-entity>
 
+        <!-- animation has a startEvents property -->
         <a-box position="-3 1 -5" rotation="0 90 30" scale="" color="#F44336" event-set__enter="_event: mouseenter; _target: #bg; color: #F44336"
             sound="src: assets/sound/sound9.mp3; on: mouseenter" 
             animation__scaleup="property: scale; from:1 1 1; to: 2 2 2; loop: false; dur: 1000; easing: easeInSine; startEvents: mouseenter;"
