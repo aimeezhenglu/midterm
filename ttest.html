@@ -26,6 +26,7 @@
       <a-asset-item id="si-obj3" src="assets/models/si/space_invader3.obj"></a-asset-item>
       <a-asset-item id="si-mtl3" src="assets/models/si/space_invader3.mtl"></a-asset-item>
     </a-assets>
+
     <a-entity environment="preset: tron"></a-entity>
 
               <!-- Camera with gaze -->
@@ -39,7 +40,8 @@
 
     <a-entity obj-model="obj: #si-obj; mtl: #si-mtl" position="-4 1 -5" scale=".25 .25 .25"
       animation__rot="property: position; from:-4 4 -5; to: -4 1 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; scale: .5 .5 .5" event-set__leave="_event: mouseleave; scale: .25 .25 .25"
+      event-set__enter="_event: mouseenter; scale: .5 .5 .5" 
+      event-set__leave="_event: mouseleave; scale: .25 .25 .25"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
