@@ -29,38 +29,48 @@
 
     <a-entity camera look-controls wasd-controls>
         <a-entity obj-model="obj: #si-obj5; mtl: #si-mtl"
-            cursor="fuse: true; fuseTimeout: 500" position="-0.33256 0.28617 -0.80545" scale="0.25 0.25 1" >            
+            cursor="fuse: true; fuseTimeout: 500" position="-0.33256 0.28617 -0.80545" scale=".25 .25 1" >            
         </a-entity>
     </a-entity>
 
-    
-    <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="-4 1 -5" rotation="0 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:-4 10 -50; to: -4 10 100; loop: true; dur: 5000; dir: alternate; easing: easeInSine"
+    <!-- round 1 -->
+
+    <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="-4 1 -5" rotation="。2 0 0" scale=".5 .5 .5"
+      animation__rot="property: position; from:-4 4 -12; to: -4 20 -12; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #green; visible: false"
       event-set__leave="_event: mouseleave; _target: #green; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity id="red" obj-model="obj: #si-obj2; mtl: #si-mtl" position="0 1 -5" rotation="0 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:0 10 -50; to: 0 10 100; loop: true; dur: 10000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #red; visible: false"
-      event-set__leave="_event: mouseleave; _target: #red; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
+    <a-entity id="red" obj-model="obj: #si-obj2; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
+    animation__rot="property: position; from:0 2 -5; to: 0 10 -5; loop: true; dur: 2000; dir: alternate; easing: easeInSine"
+    event-set__enter="_event: mouseenter; _target: #red; visible: false"
+    event-set__leave="_event: mouseleave; _target: #red; visible: false"
+    sound="src: assets/sound/sound9.mp3; on: mouseenter">
+  </a-entity>
     
     <a-entity id="yellow" obj-model="obj: #si-obj3; mtl: #si-mtl" position="4 1 -5" rotation="0 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:4 10 -50; to: 4 10 100; loop: true; dur: 15000; dir: alternate; easing: easeInSine"
+      animation__rot="property: position; from:4 10 -50; to: 4 10 100; loop: fales; dur: 15000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #yellow; visible: false"
       event-set__leave="_event: mouseleave; _target: #yellow; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity id="rocket" obj-model="obj: #si-obj4; mtl: #si-mtl" position="13.79554 15.79258 -14.27923" rotation="90 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:8 10 -50; to: 4 10 100; loop: true; dur: 20000; dir: alternate; easing: easeInSine"
+    <a-entity id="rocket" obj-model="obj: #si-obj4; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="90 0 0" scale=".5 .5 .5"
+      animation__rot="property: position; from:-15 10 -50; to: 4 10 100; loop: fales; dur: 20000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #rocket; visible: false"
       event-set__leave="_event: mouseleave; _target: #rocket; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
+
+    
+    
+    </a-entity>
+
+
+    
+
+
 
     <a-entity laser-controls="hand: left "></a-entity>
     <a-entity laser-controls="hand: right "></a-entity>
