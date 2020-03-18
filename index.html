@@ -36,14 +36,16 @@
     
     <a-entity id="ttt" obj-model="obj: #si-obj; mtl: #si-mtl" position="-4 1 -5" scale=".25 .25 .25"
       animation__rot="property: position; from:-4 4 -5; to: -4 1 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__leave1="_event: mouseenter; _target: #ttt; visible: false"
+      event-set__enter="_event: mouseenter; _target: #ttt; visible: false"
+      event-set__leave="_event: mouseleave; _target: #ttt; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
     
     <a-entity id="cylinder" obj-model="obj: #si-obj2; mtl: #si-mtl2" position="0 1 -5" scale=".25 .25 .25"
       animation__rot="property: position; from:0 1 -5; to: 0 4 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__leave1="_event: mouseenter; _target: #cylinder; visible: false"
+      event-set__enter="_event: mouseenter; _target: #cylinder; visible: false"
+      event-set__leave="_event: mouseleave; _target: #cylinder; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
    
@@ -51,7 +53,8 @@
     
     <a-entity id="sss" obj-model="obj: #si-obj3; mtl: #si-mtl" position="4 1 -5" scale=".25 .25 .25"
       animation__rot="property: position; from:4 4 -5; to: 4 1 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__leave1="_event: mouseenter; _target: #sss; visible: false"
+      event-set__enter="_event: mouseenter; _target: #sss; visible: false"
+      event-set__leave="_event: mouseleave; _target: #sss; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
