@@ -15,15 +15,16 @@
 <body>
   <a-scene>
     <a-assets>
+      <img id="gndTexture" src="assets/img/grid.jpg">
       <a-asset-item id="si-obj" src="assets/models/si/character1.obj"></a-asset-item>
       <a-asset-item id="si-mtl" src="assets/models/si/character1.mtl"></a-asset-item>
       <a-asset-item id="si-obj2" src="assets/models/si/character2.obj"></a-asset-item>
       <a-asset-item id="si-mtl2" src="assets/models/si/character2.mtl"></a-asset-item>
       <a-asset-item id="si-obj3" src="assets/models/si/character3.obj"></a-asset-item>
       <a-asset-item id="si-mtl3" src="assets/models/si/character3.mtl"></a-asset-item>
-      <a-entity environment="preset: tron"></a-entity>
     </a-assets>
-            
+
+              
     <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1 -1">
         <a-entity cursor="fuse: true; fuseTimeout: 500"
                   position="0 0 -1"
@@ -53,8 +54,18 @@
       event-set__leave1="_event: mouseenter; _target: #sss; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
-    
 
+    <a-entity laser-controls="hand: left "></a-entity>
+    <a-entity laser-controls="hand: right "></a-entity>
+
+    <a-sky id="bg " color="#fff "></a-sky>
+
+    <a-plane src="#gndTexture " rotation="-90 0 0 " width="50 " height="50 "></a-plane>
+    
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
+    
   </a-scene>
  </body>
 
