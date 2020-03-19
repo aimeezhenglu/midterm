@@ -29,6 +29,8 @@
       <a-asset-item id="si-mtl7" src="assets/models/si/pink.mtl"></a-asset-item>
       <a-asset-item id="si-obj8" src="assets/models/si/start.obj"></a-asset-item>
       <a-asset-item id="si-mtl8" src="assets/models/si/start.mtl"></a-asset-item>
+      <a-asset-item id="si-obj9" src="assets/models/si/introduction.obj"></a-asset-item>
+      <a-asset-item id="si-mtl9" src="assets/models/si/introduction.mtl"></a-asset-item>
     </a-assets>
 
     <a-entity environment="preset: starry"></a-entity>
@@ -39,12 +41,17 @@
         </a-entity>
     </a-entity>
 
+
+    <!-- round 1 -->
     <a-entity id="start" obj-model="obj: #si-obj8; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
-    animation__rot="property: position; from:0 1.5 -5; to: 0 .15 -5; loop: true; dur: 2000; dir: alternate; easing: easeInSine"
-    event-set__enter="_event: mouseenter; _target: #start; visible: false"
-    event-set__leave="_event: mouseleave; _target: #start; visible: false"
-    sound="src: assets/sound/sound9.mp3; on: mouseenter">
-  </a-entity>
+      animation__rot="property: position; from:0 1.5 -5; to: 0 .4 -5; loop: true; dur: 2000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; _target: #start; visible: false"
+      event-set__leave="_event: mouseleave; _target: #start; visible: false"
+      sound="src: assets/sound/sound9.mp3; on: mouseenter">
+    </a-entity>
+
+    <a-entity id="introduction" obj-model="obj: #si-obj9; mtl: #si-mtl" position="1 0 -4" rotation="0 -30 0" scale=".5 .5 .5">
+    </a-entity>
     
     <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale="1 1 1"
       animation__rot="property: position; from:4 10 -100; to: 4 10 100; loop: fales; dur: 15000; dir: alternate; easing: easeInSine"
@@ -90,7 +97,7 @@
 
     
     
-    </a-entity>
+    <!-- round 2 -->
 
 
     
