@@ -15,18 +15,18 @@
     <a-assets>
       <a-asset-item id="si-obj" src="assets/models/si/green.obj"></a-asset-item>
       <a-asset-item id="si-mtl" src="assets/models/si/green.mtl"></a-asset-item>
-      <a-asset-item id="si-obj2" src="assets/models/si/red.obj"></a-asset-item>
-      <a-asset-item id="si-mtl2" src="assets/models/si/red.mtl"></a-asset-item>
-      <a-asset-item id="si-obj3" src="assets/models/si/yellow.obj"></a-asset-item>
-      <a-asset-item id="si-mtl3" src="assets/models/si/yellow.mtl"></a-asset-item>
+      <a-asset-item id="si-obj2" src="assets/models/si/orange.obj"></a-asset-item>
+      <a-asset-item id="si-mtl2" src="assets/models/si/orange.mtl"></a-asset-item>
+      <a-asset-item id="si-obj3" src="assets/models/si/brown.obj"></a-asset-item>
+      <a-asset-item id="si-mtl3" src="assets/models/si/brown.mtl"></a-asset-item>
       <a-asset-item id="si-obj4" src="assets/models/si/rocket.obj"></a-asset-item>
       <a-asset-item id="si-mtl4" src="assets/models/si/rocket.mtl"></a-asset-item>
       <a-asset-item id="si-obj5" src="assets/models/si/sight.obj"></a-asset-item>
       <a-asset-item id="si-mtl5" src="assets/models/si/sight.mtl"></a-asset-item>
       <a-asset-item id="si-obj6" src="assets/models/si/purple.obj"></a-asset-item>
       <a-asset-item id="si-mtl6" src="assets/models/si/purple.mtl"></a-asset-item>
-      <a-asset-item id="si-obj7" src="assets/models/si/orange.obj"></a-asset-item>
-      <a-asset-item id="si-mtl7" src="assets/models/si/orange.mtl"></a-asset-item>
+      <a-asset-item id="si-obj7" src="assets/models/si/pink.obj"></a-asset-item>
+      <a-asset-item id="si-mtl7" src="assets/models/si/pink.mtl"></a-asset-item>
       <a-asset-item id="si-obj8" src="assets/models/si/start.obj"></a-asset-item>
       <a-asset-item id="si-mtl8" src="assets/models/si/start.mtl"></a-asset-item>
     </a-assets>
@@ -46,10 +46,10 @@
     sound="src: assets/sound/sound9.mp3; on: mouseenter">
   </a-entity>
     
-    <a-entity id="yellow" obj-model="obj: #si-obj3; mtl: #si-mtl" position="4 1 -5" rotation="0 0 0" scale="1 1 1"
+    <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale="1 1 1"
       animation__rot="property: position; from:4 10 -100; to: 4 10 100; loop: fales; dur: 15000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #yellow; visible: false"
-      event-set__leave="_event: mouseleave; _target: #yellow; visible: false"
+      event-set__enter="_event: mouseenter; _target: #green; visible: false"
+      event-set__leave="_event: mouseleave; _target: #green; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
@@ -67,14 +67,14 @@
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity id="red" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
+    <a-entity id="pink" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
     animation__rot="property: position; from:-10 10 -250; to: 4 10 100; loop: fales; dur: 28000; dir: alternate; easing: easeInSine"
-    event-set__enter="_event: mouseenter; _target: #red; visible: false"
-    event-set__leave="_event: mouseleave; _target: #red; visible: false"
+    event-set__enter="_event: mouseenter; _target: #pink; visible: false"
+    event-set__leave="_event: mouseleave; _target: #pink; visible: false"
     sound="src: assets/sound/sound9.mp3; on: mouseenter">
   </a-entity>
 
-    <a-entity id="orange" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
+    <a-entity id="orange" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
       animation__rot="property: position; from:-10 10 -280; to: 4 10 100; loop: fales; dur: 33000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #orange; visible: false"
       event-set__leave="_event: mouseleave; _target: #orange; visible: false"
