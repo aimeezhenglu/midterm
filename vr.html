@@ -40,17 +40,13 @@
     <a-entity environment="preset: forest; dressing: cubes;"></a-entity>
 
 
-    <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1 -1">
-        <a-entity cursor="fuse: true; fuseTimeout: 300"
-                  position="0 0 -1"
-                  scale=".8 .8 .8"
-                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                  material="color: red; shader: flat">
-        </a-entity>
+    <a-entity camera look-controls wasd-controls>
+      <a-entity obj-model="obj: #si-obj5; mtl: #si-mtl"
+      cursor="fuse: true; fuseTimeout: 50" position="-0.33256 0.1617 -0.80545" scale=".25 .25 1" >
+      </a-entity>
     </a-entity>
 
 
-    <!-- round 1 -->
     <a-entity id="start" obj-model="obj: #si-obj8; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
       animation__rot="property: position; from:0 1.5 -5; to: 0 .4 -5; loop: true; dur: 2000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #start; visible: false"
@@ -60,7 +56,7 @@
 
     <a-entity id="introduction" obj-model="obj: #si-obj9; mtl: #si-mtl" position="1 -1 -4" rotation="0 -20 0" scale=".5 .5 .5">
     </a-entity>
-    
+  
     <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale="1 1 1"
       animation__rot="property: position; from:4 10 -100; to: 4 10 100; loop: fales; dur: 15000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #green; visible: false"
@@ -83,11 +79,11 @@
     </a-entity>
 
     <a-entity id="pink" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
-    animation__rot="property: position; from:-10 10 -250; to: 4 10 100; loop: fales; dur: 28000; dir: alternate; easing: easeInSine"
-    event-set__enter="_event: mouseenter; _target: #pink; visible: false"
-    event-set__leave="_event: mouseleave; _target: #pink; visible: false"
-    sound="src: assets/sound/sound9.mp3; on: mouseenter">
-  </a-entity>
+      animation__rot="property: position; from:-10 10 -250; to: 4 10 100; loop: fales; dur: 28000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; _target: #pink; visible: false"
+      event-set__leave="_event: mouseleave; _target: #pink; visible: false"
+      sound="src: assets/sound/sound9.mp3; on: mouseenter">
+    </a-entity>
 
     <a-entity id="orange" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
       animation__rot="property: position; from:-10 10 -280; to: 4 10 100; loop: fales; dur: 33000; dir: alternate; easing: easeInSine"
@@ -102,7 +98,7 @@
       event-set__leave="_event: mouseleave; _target: #rocket1; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity> 
-    
+  
     <a-entity id="rocket2" obj-model="obj: #si-obj4; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="90 0 0" scale="1 1 1"
       animation__rot="property: position; from:-10 8 -100; to:0 8 100; loop: fales; dur: 40000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #rocket2; visible: false"
@@ -121,18 +117,21 @@
       animation__rot="property: position; from:0 8 -250; to: 0 8 -20; loop: fales; dur: 38000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #play; visible: fales"
       event-set__leave="_event: mouseleave; _target: #play; visible: true">
-      <a-link href="https://aimeezhenglu.github.io/midterm/vr.html" position="3 10 -2" 
+      <a-link href="https://aimeezhenglu.github.io/midterm/tt.html" position="3 10 -2" 
       event-set__enter="_event: mouseenter; visible: false" event-set__leave="_event: mouseleave; visible: false" ></a-link>
     </a-entity> 
 
-    
+  
     <a-entity laser-controls="hand: left "></a-entity>
     <a-entity laser-controls="hand: right "></a-entity>
 
     <a-light type="ambient" color="#444"></a-light>
     <a-light type="point" intensity="0.5"></a-light>
-     
- </a-scene>
-</body>
 
+    <a-camera>
+      <a-cursor event-set__enter="_event: mouseenter; visible: false" event-set__leave="_event: mouseleave; visible: false"></a-cursor>
+    </a-camera>
+   
+  </a-scene>
+ </body>
 </html>
