@@ -31,6 +31,8 @@
       <a-asset-item id="si-mtl8" src="assets/models/si/start.mtl"></a-asset-item>
       <a-asset-item id="si-obj9" src="assets/models/si/introduction.obj"></a-asset-item>
       <a-asset-item id="si-mtl9" src="assets/models/si/introduction.mtl"></a-asset-item>
+      <a-asset-item id="si-obj10" src="assets/models/si/test.obj"></a-asset-item>
+      <a-asset-item id="si-mtl10" src="assets/models/si/test.mtl"></a-asset-item>
     </a-assets>
 
     <a-entity environment="preset: starry"></a-entity>
@@ -110,11 +112,12 @@
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    
-
-
-    
-
+    <a-entity id="brown" obj-model="obj: #si-obj3; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 -90 0" scale=".5 .5 .5"
+      animation__rot="property: position; from:15 10 -200; to: 10 10 100; loop: fales; dur: 40000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; _target: #brown; visible: false"
+      event-set__leave="_event: mouseleave; _target: #brown; visible: false"
+      sound="src: assets/sound/sound9.mp3; on: mouseenter">
+    </a-entity>
 
 
     <a-entity laser-controls="hand: left "></a-entity>
