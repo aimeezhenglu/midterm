@@ -33,7 +33,6 @@
       <a-asset-item id="si-mtl9" src="assets/models/si/introduction.mtl"></a-asset-item>
       <a-asset-item id="si-obj10" src="assets/models/si/test.obj"></a-asset-item>
       <a-asset-item id="si-mtl10" src="assets/models/si/test.mtl"></a-asset-item>
-      <img id="thumbCity" crossOrigin="anonymous" src="assets/img/rocket.png">
     </a-assets>
 
     <a-entity environment="preset: forest; dressing: cubes;"></a-entity>
@@ -114,15 +113,12 @@
     </a-entity>
 
 
-    <a-entity id="test" obj-model="obj: #si-obj10; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:-1 -100 -5; to: -1 .25 -5; loop: fales; dur: 30000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #test; visible: true">
-    </a-entity>   
-    
-    <a-entity id="test" obj-model="obj: #si-obj10; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
-      animation__rot="property: position; from:-1 -100 -5; to: -1 .25 -5; loop: fales; dur: 30000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #test; visible: true">
-      <a-link href="https://aimeezhenglu.github.io/midterm/tt.html" position="3 10 -2" image="#thumbCity"></a-link>
+    <a-entity id="play" obj-model="obj: #si-obj11; mtl: #si-mtl" rotation="10 0 0" scale="1 1 1"
+      animation__rot="property: position; from:0 8 -150; to: 0 8 -20; loop: fales; dur: 30000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; _target: #play; visible: fales"
+      event-set__leave="_event: mouseleave; _target: #play; visible: true">
+      <a-link href="https://aimeezhenglu.github.io/midterm/tt.html" position="3 10 -2" 
+      event-set__enter="_event: mouseenter; visible: false" event-set__leave="_event: mouseleave; visible: false" ></a-link>
     </a-entity>   
   
     
